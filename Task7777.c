@@ -62,7 +62,7 @@ int main(int arc, char *argv[])
         }
     }
     cipher[k] = '\0';
-    in = fopen("/home/seed/Desktop/english_wrd_list.txt", "r"); // open the file in read mode
+    in = fopen("/home/seed/Downloads/Labsetup/words.txt", "r"); // open the file in read mode
     if (in == NULL)                                             // if path is wrong then in value will be null that means an error occured or file not found or path not found or may not have read rights
     {
         printf("\n cannot open file"); // error will be thrown
