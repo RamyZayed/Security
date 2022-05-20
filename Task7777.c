@@ -69,7 +69,8 @@ int main(int arc, char *argv[])
         exit(1);                       // and exit from the program
     }
 
-    EVP_CIPHER_CTX ctx;        // declared the libraray data type variable ctx
+    EVP_CIPHER_CTX ctx;
+    ctx = EVP_CIPHER_CTX_new();        // declared the libraray data type variable ctx
     EVP_CIPHER_CTX_init(&ctx); // storing address of ctx for reference with memory allocation initialization
 
     while (fgets(key, sizeof(key), in) != NULL) // key[16] is not NULL this loop will continue
